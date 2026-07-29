@@ -206,15 +206,15 @@ Administrative privileges remain restricted to authorized administrators while s
 
 ## Policy Engineering
 
-The policy implementation evolved through multiple stages as the enterprise environment expanded.
+The policy implementation was developed incrementally to reflect how enterprise environments typically evolve from foundational identity services to centralized policy enforcement and authorization.
 
-Initial deployment focused on establishing Organizational Units and security groups before implementing centralized Group Policy management.
+The initial implementation established Organizational Units and Active Directory security groups to provide the administrative and authorization structure required for centralized management.
 
-Administrative restrictions were then introduced to prevent unauthorized modification of workstation configuration while maintaining administrative access for privileged accounts.
+Group Policy Objects were then introduced to standardize workstation configuration, apply enterprise security baselines, and enforce administrative restrictions across managed systems.
 
-Security groups were integrated with NTFS permissions to implement Role-Based Access Control (RBAC), ensuring authorization was assigned through group membership rather than individual user accounts.
+As the environment matured, Active Directory security groups were integrated with NTFS permissions to extend Role-Based Access Control (RBAC) from identity management to resource authorization.
 
-Policy validation using GPResult confirmed that workstation configuration, administrative restrictions, logon banners, and authorization settings were successfully applied throughout the environment.
+Finally, policy validation using GPResult confirmed that Group Policy processing, security settings, administrative restrictions, and authorization controls were consistently applied throughout the enterprise environment.
 
 ---
 
