@@ -37,15 +37,16 @@ Network architecture, firewall policy, Active Directory deployment, authenticati
 
 ## Design Objectives
 
-The implementation was designed to simulate enterprise policy management by:
+The Group Policy, RBAC, and Security Controls implementation was designed around the following enterprise policy and security objectives:
 
-- Centralizing Windows configuration through Group Policy
-- Implementing Role-Based Access Control (RBAC)
-- Enforcing least privilege
-- Standardizing endpoint security
-- Separating administrative responsibilities using Organizational Units
-- Applying security controls aligned with NIST SP 800-53 guidance
-- Managing resource authorization through Active Directory security groups
+- Centralize Windows security configuration through Group Policy.
+- Implement Role-Based Access Control (RBAC).
+- Enforce least-privilege administrative practices.
+- Standardize enterprise security baselines across managed endpoints.
+- Separate administrative responsibilities through Organizational Units.
+- Apply enterprise security controls aligned with NIST SP 800-53 guidance.
+- Manage resource authorization through Active Directory security groups.
+- Provide the centralized policy foundation for future identity and security services.
 
 ---
 
