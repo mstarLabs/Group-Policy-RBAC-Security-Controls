@@ -12,6 +12,29 @@ This repository emphasizes enterprise policy management, security baselines, Rol
 
 ---
 
+## Role Within the Enterprise Identity Security Lab
+
+The Group Policy, RBAC, and Security Controls repository represents the fourth architectural layer of the Enterprise Identity Security Lab.
+
+It implements the centralized policy management, enterprise security baselines, and role-based authorization required to consistently secure Windows systems and support downstream identity and security services.
+
+This repository is responsible for documenting:
+
+- Group Policy Object (GPO) implementation
+- Organizational Unit policy assignment
+- Role-Based Access Control (RBAC)
+- Active Directory security group design
+- Enterprise security baselines
+- Administrative restrictions
+- Endpoint security configuration
+- NTFS authorization
+- Policy validation
+- Enterprise policy implementation evidence
+
+Network architecture, firewall policy, Active Directory deployment, authentication services, DNS, and directory administration remain the responsibility of the Enterprise Network Architecture, Enterprise Firewall Platform, and Active Directory Domain Services repositories.
+
+---
+
 ## Design Objectives
 
 The implementation was designed to simulate enterprise policy management by:
