@@ -2,11 +2,13 @@
 
 ## Project Overview
 
-The Group Policy, RBAC, and Security Controls repository implements centralized policy management, role-based access control, and Windows security baselines within the Enterprise Identity Security Lab.
+This repository documents the implementation of Group Policy, Role-Based Access Control (RBAC), and centralized Windows security controls within the Enterprise Identity Security Lab.
 
-This project demonstrates how enterprise organizations use Active Directory Organizational Units (OUs), security groups, Group Policy Objects (GPOs), and NTFS permissions to centrally manage user configuration, restrict administrative capabilities, enforce least privilege, and standardize endpoint security.
+Building upon the Enterprise Network Architecture, Enterprise Firewall Platform, and Active Directory Domain Services repositories, this repository extends centralized identity into centralized policy enforcement, endpoint security, administrative control, and enterprise authorization.
 
-The implementation builds upon the Enterprise Network Architecture, Enterprise Firewall Platform, and Active Directory Domain Services repositories by extending centralized identity into centralized policy enforcement.
+Rather than documenting Group Policy configuration in isolation, this repository demonstrates how enterprise organizations use Active Directory Organizational Units (OUs), security groups, Group Policy Objects (GPOs), and NTFS permissions to standardize workstation configuration, enforce least privilege, delegate administrative responsibilities, and centrally manage enterprise security policies.
+
+This repository emphasizes enterprise policy management, security baselines, Role-Based Access Control (RBAC), least-privilege administration, policy validation, and implementation evidence.
 
 ---
 
