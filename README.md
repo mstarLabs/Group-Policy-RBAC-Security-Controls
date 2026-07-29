@@ -186,19 +186,21 @@ The implemented Group Policy Objects demonstrate how centralized policy enforcem
 
 ## Security Design
 
-Security controls were implemented using Microsoft's centralized Group Policy infrastructure to enforce consistent workstation configuration and administrative restrictions throughout the environment.
+The security design of the Enterprise Identity Security Lab combines centralized identity, policy enforcement, and resource authorization to provide consistent security controls across managed Windows systems.
 
-The design follows several enterprise security principles:
+Rather than relying on individual workstation configuration, security policies are centrally managed through Group Policy, Active Directory security groups, Organizational Units, and NTFS permissions. This layered approach simplifies administration while supporting least-privilege access, administrative separation, and standardized security baselines.
+
+The implementation applies the following enterprise security principles:
 
 - Centralized policy management
 - Role-Based Access Control (RBAC)
-- Least privilege
+- Least-privilege administration
 - Administrative separation
 - Standardized Windows security baselines
-- Department-specific policy assignment
-- Centralized authorization using Active Directory security groups
+- Organizational Unit–based policy targeting
+- Centralized resource authorization using Active Directory security groups
 
-Administrative permissions remain assigned only to authorized administrators while standard users receive policy appropriate for their organizational role.
+Administrative privileges remain restricted to authorized administrators while standard users receive only the policies and permissions required for their organizational role. This design reinforces least privilege, improves administrative consistency, and establishes a scalable security model that supports future identity and access management capabilities.
 
 ---
 
