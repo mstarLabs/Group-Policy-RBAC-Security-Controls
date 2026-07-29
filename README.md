@@ -220,7 +220,7 @@ Finally, policy validation using GPResult confirmed that Group Policy processing
 
 ## Validation
 
-The Group Policy, RBAC, and Security Controls implementation was validated through functional testing to ensure centralized policy management, authorization, and security controls behaved as expected throughout the enterprise environment.
+The Group Policy, RBAC, and Security Controls implementation was validated through functional testing to verify that centralized policy management, authorization, and enterprise security controls operated as designed throughout the Enterprise Identity Security Lab.
 
 ### Validation Results
 
@@ -235,11 +235,11 @@ The Group Policy, RBAC, and Security Controls implementation was validated throu
 | Interactive logon banner | Enterprise logon banner displays before user authentication | ✅ Passed |
 | GPResult policy validation | Applied Group Policy Objects match the expected configuration | ✅ Passed |
 
-Successful validation confirms that centralized policy management, Role-Based Access Control (RBAC), and enterprise security baselines integrate correctly with Active Directory Domain Services while providing the authorization framework required by future identity services.
+Successful validation confirms that centralized policy management, Role-Based Access Control (RBAC), enterprise security baselines, and resource authorization integrate correctly with Active Directory Domain Services. Together, these controls establish the policy and authorization foundation that supports future identity, governance, and privileged access management capabilities.
 
 ### Group Policy Results
 
-The `gpresult_sales.html` report is included within the `Documentation` directory and confirms that the expected Group Policy Objects were successfully processed by the Sales workstation.
+The `gpresult_sales.html` report, included within the `Documentation` directory, confirms that the expected Group Policy Objects were successfully processed and applied to the Sales workstation during policy validation.
 
 > **Validation Evidence:** GPResult policy processing
 
