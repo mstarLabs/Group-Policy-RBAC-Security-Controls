@@ -150,9 +150,11 @@ This implementation demonstrates how centralized identity integrates with resour
 
 ## Group Policy Implementation
 
-Group Policy Objects (GPOs) provide centralized configuration management across the Enterprise Identity Security Lab.
+Group Policy Objects (GPOs) provide the centralized policy enforcement mechanism used throughout the Enterprise Identity Security Lab.
 
-Policies were deployed to Organizational Units (OUs) to enforce security baselines, restrict administrative capabilities, and standardize workstation configuration while maintaining centralized administration through Active Directory.
+Building upon the Organizational Unit hierarchy established within Active Directory Domain Services, Group Policy enables enterprise administrators to consistently apply security baselines, administrative restrictions, and workstation configuration across managed systems without requiring manual endpoint configuration.
+
+The following Group Policy Objects demonstrate how centralized policy is applied to departmental users and enterprise workstations.
 
 | Group Policy Object | Linked Organizational Unit | Purpose |
 |----------------------|----------------------------|---------|
@@ -162,7 +164,7 @@ Policies were deployed to Organizational Units (OUs) to enforce security baselin
 
 ### Policy Configuration
 
-Implemented policy controls include:
+The implemented Group Policy configuration includes the following enterprise security controls:
 
 - Interactive logon banner
 - Control Panel restrictions
@@ -177,6 +179,8 @@ Implemented policy controls include:
 > **Implementation Evidence:** Enterprise interactive logon banner
 
 ![Login Banner](Documentation/Logon_Banner.png)
+
+The implemented Group Policy Objects demonstrate how centralized policy enforcement integrates with Active Directory Organizational Units to provide consistent workstation configuration, administrative restrictions, and enterprise security baselines across managed systems.
 
 ---
 
