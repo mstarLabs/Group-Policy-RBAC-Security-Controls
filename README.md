@@ -92,7 +92,13 @@ This design supports centralized policy management, administrative delegation, p
 
 ---
 
-## Role-Based Access Control
+## Role-Based Access Control (RBAC)
+
+Role-Based Access Control (RBAC) provides the enterprise authorization model used throughout the Enterprise Identity Security Lab.
+
+Rather than assigning permissions directly to individual user accounts, authorization is delegated through Active Directory security groups. This approach centralizes permission management, supports least-privilege administration, simplifies auditing, and enables consistent access control as users join, move between, or leave departments.
+
+The following user-to-group assignments document the authorization model implemented within the Enterprise Identity Security Lab.
 
 Stored in `Documentation/GroupMemberships.csv`
 
@@ -102,15 +108,13 @@ Stored in `Documentation/GroupMemberships.csv`
 | Sales Test | Domain Users, Sales_ReadAccess          |
 | HR Test    | Domain Users, HR_ReadOnly               |
 
-Role-Based Access Control (RBAC) is implemented using Active Directory security groups.
-
-Permissions are assigned to security groups rather than individual users, allowing authorization to be centrally managed while supporting least privilege and simplified access administration.
-
-User membership documentation is maintained within the repository to validate authorization assignments.
+The following implementation demonstrates how user identities inherit authorization through security group membership.
 
 > **Implementation Evidence:** Sales security group membership
-> 
+
 ![SG_Sales_Memebers](Documentation/SG_Sales_Memebers.png)
+
+This implementation demonstrates the enterprise practice of assigning permissions to security groups rather than individual user accounts.
 
 ---
 
