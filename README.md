@@ -120,9 +120,11 @@ This implementation demonstrates the enterprise practice of assigning permission
 
 ## Resource Authorization
 
-Departmental file shares are secured using Active Directory security groups and NTFS permissions.
+Resource authorization within the Enterprise Identity Security Lab is implemented by combining Active Directory security groups with NTFS Access Control Lists (ACLs).
 
-Authorization is assigned to security groups rather than individual user accounts, supporting scalable administration and enterprise RBAC practices.
+Rather than assigning permissions directly to individual user accounts, access is granted to security groups representing organizational roles. This approach centralizes authorization, simplifies permission management, supports least-privilege administration, and ensures consistent access control as users join, move between, or leave departments.
+
+The following authorization assignments demonstrate how departmental resources are protected through centralized group-based access control.
 
 **Sales Folder**:
 - Location: `C:\Shares\Sales`
@@ -141,6 +143,8 @@ Authorization is assigned to security groups rather than individual user account
 > **Configuration Evidence:** NTFS security permissions
 
 ![Sales_Share_Security](Documentation/Sales_Share_Security.png)
+
+This implementation demonstrates how centralized identity integrates with resource-level authorization. By combining Active Directory security groups with NTFS permissions, access decisions remain consistent, auditable, and scalable while supporting enterprise least-privilege principles.
 
 ---
 
