@@ -51,16 +51,18 @@ The implementation was designed to simulate enterprise policy management by:
 
 ## Architecture
 
-The Group Policy, RBAC, and Security Controls repository represents the enterprise policy management layer of the Enterprise Identity Security Lab.
+The Group Policy, RBAC, and Security Controls repository depends on the enterprise identity infrastructure established by the Active Directory Domain Services repository and the underlying network and communication services provided by the Enterprise Network Architecture and Enterprise Firewall Platform repositories.
 
-| Component | Responsibility |
-|-----------|----------------|
-| Enterprise Network Architecture | Defines enterprise network topology and communication requirements |
-| Enterprise Firewall Platform | Enforces routing, NAT, DHCP, and firewall policy |
-| Active Directory Domain Services | Provides authentication, authorization, DNS, and directory services |
-| Group Policy, RBAC, and Security Controls | Implements centralized policy management, security baselines, and role-based authorization |
+Rather than introducing new identity services, this repository extends the existing identity platform by implementing centralized policy management, enterprise security baselines, administrative controls, and Role-Based Access Control (RBAC) across enterprise systems.
 
-This repository consumes Active Directory services to centrally manage Windows configuration, administrative restrictions, and resource authorization across enterprise endpoints.
+The following relationship defines the responsibility boundary between the repositories:
+
+| Repository | Responsibility |
+|------------|----------------|
+| Enterprise Network Architecture | Defines network topology, addressing, trust boundaries, and communication requirements |
+| Enterprise Firewall Platform | Implements routing, DHCP, NAT, and firewall policies required to support enterprise services |
+| Active Directory Domain Services | Implements centralized identity, authentication, DNS, directory services, and enterprise administration |
+| Group Policy, RBAC, and Security Controls | Implements centralized policy management, enterprise security baselines, endpoint configuration, and role-based authorization |
 
 ---
 
