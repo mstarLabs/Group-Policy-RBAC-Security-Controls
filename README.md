@@ -261,14 +261,15 @@ The `gpresult_sales.html` report, included within the `Documentation` directory,
 ### Authorization Engineering
 
 - Role-Based Access Control (RBAC)
-- Security group authorization design
+- Security group–based authorization
 - NTFS permission management
 - Departmental resource authorization
 - Least-privilege policy implementation
 - Group-based access administration
 - Enterprise authorization validation
+- Authorization model design
 
-### Enterprise Security
+### Enterprise Security Controls
 
 - Windows security baseline implementation
 - Administrative restriction policies
