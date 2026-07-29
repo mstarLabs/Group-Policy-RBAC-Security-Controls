@@ -80,11 +80,11 @@ The following relationship defines the responsibility boundary between the repos
 
 ## Identity Organizational Structure
 
-Organizational Units (OUs) provide the administrative structure used to organize users, computers, and policy assignments throughout the Active Directory environment.
+The Organizational Unit (OU) hierarchy established by the Active Directory Domain Services repository provides the administrative boundaries used to scope Group Policy throughout the Enterprise Identity Security Lab.
 
-Department-specific Organizational Units separate Human Resources and Sales identities while dedicated computer Organizational Units enable workstation-specific policy assignment.
+Department-specific Organizational Units separate Human Resources and Sales identities while dedicated computer Organizational Units enable workstation-specific policy assignment and consistent endpoint configuration.
 
-This design supports administrative delegation, policy targeting, and future expansion of enterprise identity services.
+This design supports centralized policy management, administrative delegation, policy inheritance, security filtering, and future expansion of enterprise identity and security services.
 
 > **Implementation Evidence:** Organizational Unit structure
 
